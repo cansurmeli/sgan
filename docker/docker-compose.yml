@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  sgan:
+    build: .
+    container_name: sgan
+    volumes:
+      - type: bind
+        source: "$PWD/../"
+        target: /home
+    stdin_open: true
+    tty: true
